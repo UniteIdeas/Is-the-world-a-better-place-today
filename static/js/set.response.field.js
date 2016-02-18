@@ -1,6 +1,6 @@
 var questions = [
 	{
-		//q: "Has this country reached the Millenium Development Goal set by the United Nations?",
+		//q: "Has this country reached the Millennium Development Goal set by the United Nations?",
 		q: "So, has this region reached its goal for being a better place?",
 		a: ["Yes","No"]
 	},
@@ -39,12 +39,12 @@ function set_first_question(){
 
 		container.append("h1")
 			.attr("class","minor quesiton")
-			.html("Well, that dependends on the criterion. <br/><em>Have we managed to:</em>");
+			.html("Well, that depends on the criteria. <br/><em>Have we managed to:</em>");
 
 		var headers = container.append("div")
 			.attr("class","picker headers");
 
-		var headers_data = ["High level goals", "Targets", "Indicators for measuring achivement"];
+		var headers_data = ["High level goals", "Targets", "Indicators for measuring acheivement"];
 
 		var header_cells = headers.selectAll(".header-cell")
 			.data(headers_data)
